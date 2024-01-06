@@ -7,7 +7,7 @@ export const PRODUCTS_CATEGORIES = `categories {
   }
 }`
 
-export const CATEGORIES=`
+export const CATEGORIES = `
 query Categories{
   Categories(limit:300){
     docs{
@@ -22,4 +22,4 @@ query Categories{
     }
   }
 }
-`
+` 

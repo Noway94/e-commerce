@@ -3,11 +3,8 @@ module.exports = {
   extends: ['plugin:@next/next/recommended', '@payloadcms'],
   ignorePatterns: ['**/payload-types.ts'],
   plugins: ['prettier'],
-  rules:{
-    "prettier/pretitter":[
-      'error',{endOfLine:'auto'}
-    ],
+  rules: {
+    "prettier/prettier": "off", // Disable Prettier rule
     'no-console': 'off',
-
-  }
-}
+  },
+};
