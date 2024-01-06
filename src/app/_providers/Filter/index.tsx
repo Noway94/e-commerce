@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { ReactNode, SetStateAction, createContext, useContext, useState } from "react";
 
 interface IConextType{
@@ -11,7 +11,7 @@ export const INITIAL_FILTER_DATE={
     categoryFilters:[],
     setCategoryFilters:()=>[],
     sort:'',
-    setSort:()=>''
+    setSort:()=>'',
 }
 
 const FilterContext= createContext<IConextType>(INITIAL_FILTER_DATE);
@@ -34,4 +34,4 @@ export const FilterProvider =({children}:{children:React.ReactNode})=>{
     )
 }
 
-export const useFilter = ()=>useContext(FilterContext)
+export const useFilter = ()=>useContext(FilterContext)      
